@@ -1,16 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alehamad <alehamad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/13 14:47:55 by alehamad          #+#    #+#             */
-/*   Updated: 2025/11/14 19:34:42 by alehamad         ###   ########.fr       */
+/*   Created: 2025/11/04 16:15:58 by alehamad          #+#    #+#             */
+/*   Updated: 2025/11/08 08:19:32 by alehamad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_printf(const char *, ...)
+#include "libft.h"
+
+int	ft_isalnum(int c)
 {
-	if
+	if (ft_isalpha(c) || ft_isdigit(c))
+		return (1);
+	return (0);
 }

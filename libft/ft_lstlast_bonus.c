@@ -1,16 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alehamad <alehamad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/13 14:47:55 by alehamad          #+#    #+#             */
-/*   Updated: 2025/11/14 19:34:42 by alehamad         ###   ########.fr       */
+/*   Created: 2025/11/06 13:02:10 by alehamad          #+#    #+#             */
+/*   Updated: 2025/11/11 03:56:56 by alehamad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_printf(const char *, ...)
+#include "libft.h"
+
+t_list	*ft_lstlast(t_list *lst)
 {
-	if
+	t_list	*i;
+
+	if (!lst)
+		return (0);
+	i = lst;
+	while (i->next)
+		i = i->next;
+	return (i);
 }
