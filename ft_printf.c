@@ -6,7 +6,7 @@
 /*   By: alehamad <alehamad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 14:47:55 by alehamad          #+#    #+#             */
-/*   Updated: 2025/11/17 17:18:50 by alehamad         ###   ########.fr       */
+/*   Updated: 2025/11/18 04:48:06 by alehamad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ int	ft_printf(const char *str, ...)
 	int		count;
 	va_list	args;
 
+	if (!str)
+		return (0);
 	va_start(args, str);
 	i = 0;
 	count = 0;
